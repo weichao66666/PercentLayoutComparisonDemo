@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:paddingTop="58px">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="194px"
+            android:layout_height="194px"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/flatte"
+            android:layout_width="wrap_content"
+            android:layout_height="44px"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:includeFontPadding="false"
+            android:letterSpacing="1"
+            android:text="FLATTE"
+            android:textColor="#ffffff"
+            android:textSize="44px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/socail_app"
+            android:layout_width="wrap_content"
+            android:layout_height="16px"
+            android:layout_below="@id/flatte"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.1"
+            android:text="SOCAIL APP"
+            android:textColor="#fff048"
+            android:textSize="16px"
+            android:textStyle="bold" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/container_user"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_below="@id/socail_app"
+            android:layout_marginTop="102px">
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/user_icon"
+                android:layout_width="72px"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/user_icon" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/user_icon">
+
+
+                <TextView
+                    android:id="@+id/form_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8f9399" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/form_user"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="USERNAME OR EMAIL"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/container_password"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_below="@id/container_user"
+            android:layout_marginTop="40px">
+
+            <RelativeLayout
+                android:id="@+id/password_icon"
+                android:layout_width="72px"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/password_icon" />
+            </RelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/password_icon">
+
+                <TextView
+                    android:id="@+id/form_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8f9399" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/form_password"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:text="password"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="92px"
+            android:layout_below="@id/container_password"
+            android:layout_marginTop="40px"
+            android:background="@drawable/bg_login"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="#434a54"
+            android:textSize="20px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="match_parent"
+            android:layout_height="16px"
+            android:layout_below="@id/login"
+            android:layout_marginTop="40px"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="FORGET PASSWORD"
+            android:textColor="#fcfcfc"
+            android:textSize="16px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="92px"
+            android:layout_below="@id/forget_password"
+            android:layout_marginTop="40px"
+            android:background="@drawable/bg_register"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textColor="#ffee58"
+            android:textSize="20px"
+            android:textStyle="bold" />
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/container_login_with_third_part_center"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_below="@id/register"
+            android:layout_marginTop="40px">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/twitter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/google" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>
