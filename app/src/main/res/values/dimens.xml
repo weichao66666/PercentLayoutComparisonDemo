@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h1136_16px">0.0140845070422535</dimen>
+    <dimen name="h1136_18px">0.0158450704225352</dimen>
+    <dimen name="h1136_34px">0.0299295774647887</dimen>
+    <dimen name="h1136_40px">0.0352112676056338</dimen>
+    <dimen name="h1136_44px">0.0387323943661972</dimen>
+    <dimen name="h1136_50px">0.0440140845070423</dimen>
+    <dimen name="h1136_58px">0.051056338028169</dimen>
+    <dimen name="h1136_64px">0.0563380281690141</dimen>
+    <dimen name="h1136_92px">0.0809859154929577</dimen>
+    <dimen name="h1136_96px">0.0845070422535211</dimen>
+    <dimen name="h1136_102px">0.0889084507042254</dimen>
+    <dimen name="h1136_194px">0.1707746478873239</dimen>
+    <dimen name="w640_40px">0.0625</dimen>
+    <dimen name="w640_72px">0.1125</dimen>
+</resources>
