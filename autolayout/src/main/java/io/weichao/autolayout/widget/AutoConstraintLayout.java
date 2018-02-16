@@ -1,24 +1,25 @@
-package com.zhy.autolayout;
+package io.weichao.autolayout.widget;
 
 import android.content.Context;
+import android.support.constraint.ConstraintLayout;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
+import com.zhy.autolayout.AutoLayoutInfo;
 import com.zhy.autolayout.utils.AutoLayoutHelper;
 
-public class AutoRelativeLayout extends RelativeLayout {
+public class AutoConstraintLayout extends ConstraintLayout {
     private final AutoLayoutHelper mHelper = new AutoLayoutHelper(this);
 
-    public AutoRelativeLayout(Context context) {
+    public AutoConstraintLayout(Context context) {
         super(context);
     }
 
-    public AutoRelativeLayout(Context context, AttributeSet attrs) {
+    public AutoConstraintLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public AutoRelativeLayout(Context context, AttributeSet attrs, int defStyle) {
+    public AutoConstraintLayout(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
@@ -35,7 +36,7 @@ public class AutoRelativeLayout extends RelativeLayout {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
-    public static class LayoutParams extends RelativeLayout.LayoutParams implements AutoLayoutHelper.AutoLayoutParams {
+    public static class LayoutParams extends ConstraintLayout.LayoutParams implements AutoLayoutHelper.AutoLayoutParams {
         private AutoLayoutInfo mAutoLayoutInfo;
 
         public LayoutParams(Context c, AttributeSet attrs) {
